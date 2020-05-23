@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:background="@color/darkblue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:title="Friday"
+        app:subtitleTextColor= "#FFFFFF"
+        app:subtitle="21 February, 20"
+        app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:tabBackground="@color/hotpink"
+        app:tabIndicatorColor="@color/darkblue"
+        app:tabInlineLabel="false"
+        app:tabSelectedTextColor="#FFFFFF"
+        app:tabTextAppearance="@style/TextAppearance.AppCompat.Large"
+        app:tabTextColor="#DFD4D4"
+        app:tabUnboundedRipple="false">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/allsub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All subjects" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/todaysub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="409dp"
+        android:layout_height="575dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tablayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

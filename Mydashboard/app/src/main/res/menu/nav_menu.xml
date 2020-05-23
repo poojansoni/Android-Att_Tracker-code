@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <group android:checkableBehavior="single">
+        <item
+            android:icon="@drawable/setting_icon"
+            android:id="@+id/nav_setting"
+            android:title="Settings" />
+       <item
+           android:icon="@drawable/profile_icon"
+           android:id="@+id/nav_profile"
+           android:title="Profile" />
+       <item
+           android:icon="@drawable/semester_add_icon"
+           android:id="@+id/nav_addSem"
+           android:title="Semester" />
+       <item
+           android:icon="@drawable/schedule_icon"
+           android:id="@+id/nav_addSchedule"
+           android:title="Schedule" />
+       <item
+           android:icon="@drawable/about_icon"
+           android:id="@+id/nav_about"
+           android:title="About" />
+       <item
+           android:icon="@drawable/help_icon"
+           android:id="@+id/nav_help"
+           android:title="Help" />
+   </group>
+</menu>
